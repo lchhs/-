@@ -24,9 +24,6 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                   (e.target as HTMLImageElement).parentElement!.classList.add('flex', 'items-center', 'justify-center');
                 }}
               />
-              <div className="absolute inset-0 flex items-center justify-center text-slate-500 text-sm font-medium z-0 text-center px-4 -z-10">
-                等待上傳圖檔 {src}
-              </div>
             </motion.div>
         ))}
       </div>
