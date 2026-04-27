@@ -16,7 +16,8 @@ import {
   TrendingUp,
   Copy,
   Check,
-  ImageIcon
+  ImageIcon,
+  Download
 } from 'lucide-react';
 import ImageGallery from './components/ImageGallery';
 
@@ -272,7 +273,12 @@ export default function App() {
              <ImageIcon className="w-8 h-8 text-orange-400" />
              <h2 className="text-3xl font-black text-white tracking-tight uppercase">精彩回顧 Highlights</h2>
            </div>
-           <p className="text-slate-400 mt-2 font-medium">看見球員們在場上的拚搏與汗水</p>
+           <div className="flex flex-col sm:flex-row sm:items-center justify-between mt-2 gap-4">
+             <p className="text-slate-400 font-medium">看見球員們在場上的拚搏與汗水</p>
+             <a href="/donghsing-baseball.html" download="donghsing-baseball-sponsorship.html" className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium rounded-lg transition-colors border border-slate-700">
+               <Download className="w-4 h-4" /> 下載單一網頁檔 (.html)
+             </a>
+           </div>
         </div>
         
         {/* Dynamic Image Gallery */}
